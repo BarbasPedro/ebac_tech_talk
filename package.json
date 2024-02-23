@@ -1,7 +1,8 @@
 {
   "devDependencies": {
     "@parcel/transformer-sass": "^2.11.0",
-    "parcel": "^2.11.0"
+    "parcel": "^2.11.0",
+    "sharp": "^0.31.3"
   },
   "name": "ebac_tech_talk",
   "version": "1.0.0",
@@ -108,7 +109,7 @@
     "yallist": "^4.0.0"
   },
   "scripts": {
-    "dev": "parcel ./index.html ./src/scripts/main.js ./src/styles/main.scss",
+    "dev": "parcel ./index.html ./src/styles/main.scss ./src/scripts/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
