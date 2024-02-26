@@ -1,0 +1,76 @@
+@use './variables';
+
+.event {
+  padding: 80px 0;
+  color: variables.$textColor;
+
+    &--frontend {
+      background-image: variables.$bgColorFrontEvent;
+
+      .container {
+        display: flex;
+      }
+    }
+
+    &--uiux {
+      background-image: variables.$bgColorUiUxEvent;
+    }
+
+    &--datascience {
+      background-image: variables.$bgColorDataScienceEvent;
+
+      .container {
+        display: flex;
+      }
+    }
+
+    &--backend {
+      background-image: variables.$bgColorBackEvent;
+    }
+
+    &--image-left {
+
+      .container {
+        display: flex;
+        flex-direction: row-reverse;
+      }
+
+      .event__details {
+        margin-right: 0;
+        margin-left: 40px;
+      }
+    }
+
+  &__details {
+    margin-right: 40px;
+
+    &__title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+
+    &__description {
+      line-height: 22px;
+    }
+  }
+
+  &__image {
+    max-width: 360px;
+  }
+
+  @media (max-width: 640px) {
+    .container {
+      display: block;
+    }
+
+    &__details {
+      margin-right: 0;
+      margin-bottom: 16px;
+
+      &__image {
+        width: 100%;
+      }
+    }
+  }
+}
