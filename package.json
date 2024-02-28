@@ -60,7 +60,6 @@
     "json-parse-even-better-errors": "^2.3.1",
     "json5": "^2.2.3",
     "lightningcss": "^1.23.0",
-    "lightningcss-win32-x64-msvc": "^1.23.0",
     "lines-and-columns": "^1.2.4",
     "lmdb": "^2.8.5",
     "lru-cache": "^6.0.0",
@@ -108,8 +107,8 @@
     "yallist": "^4.0.0"
   },
   "scripts": {
-    "build": "parcel build ./src/index.html",
-    "dev": "parcel ./src/index.html ./src/styles/main.scss ./src/scripts/main.js",
+    "build": "parcel build src/index.html",
+    "dev": "parcel src/index.html src/styles/main.scss src/scripts/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
